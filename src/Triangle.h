@@ -1,0 +1,14 @@
+//
+// Created by ligas on 15.04.2023.
+//
+
+#ifndef COLLISIONS_INTERNSHIP_TRIANGLE_H
+#define COLLISIONS_INTERNSHIP_TRIANGLE_H
+
+
+class Triangle {
+
+};
+
+
+#endif //COLLISIONS_INTERNSHIP_TRIANGLE_H
