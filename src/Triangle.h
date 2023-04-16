@@ -11,12 +11,6 @@ class Triangle : public sf::Drawable {
 public:
     Triangle(float t_X, float t_Y);
     Triangle() = delete;
-    ~Triangle() = default;
-
-    float left();
-    float right();
-    float top();
-    float bottom();
 
     void update();
     void setCollissionColor();
@@ -26,6 +20,10 @@ public:
 
 
 private:
+    float left();
+    float right();
+    float top();
+    float bottom();
     sf::ConvexShape shape;
     void draw(sf::RenderTarget& target,sf::RenderStates state) const override;
     const float triangleVelocity {5.0f};

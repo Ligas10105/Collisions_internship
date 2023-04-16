@@ -26,7 +26,7 @@ void Triangle::update() {
         velocity.x = triangleVelocity;
     } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Up) && top() > 0) {
         velocity.y = -triangleVelocity;
-    } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Down) && bottom() < 600) {
+    } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Down) && bottom() < 800) {
         velocity.y = triangleVelocity;
     } else {
         velocity.x = 0;
