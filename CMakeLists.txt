@@ -7,7 +7,7 @@ FetchContent_Declare(SFML
         GIT_TAG 2.6.x)
 FetchContent_MakeAvailable(SFML)
 
-add_executable(Collisions_internship main.cpp SAT.h SAT.h SAT.cpp Triangle.h Triangle.h Triangle.cpp)
+add_executable(Collisions_internship src/main.cpp src/SAT.h src/SAT.h src/SAT.cpp src/Triangle.h src/Triangle.h src/Triangle.cpp)
 target_link_libraries(Collisions_internship PRIVATE sfml-graphics)
 target_compile_features(Collisions_internship PRIVATE cxx_std_17)
 if (WIN32 AND BUILD_SHARED_LIBS)
