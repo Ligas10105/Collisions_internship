@@ -13,16 +13,16 @@ public:
     Triangle() = delete;
     ~Triangle() = default;
 
-    void update();
-
     float left();
     float right();
     float top();
     float bottom();
 
-    SAT::triangle getVertices();
+    void update();
     void setCollissionColor();
     void setNoCollissionColor();
+
+    SAT::triangle getVertices();
 
 
 private:
@@ -31,7 +31,5 @@ private:
     const float triangleVelocity {5.0f};
     sf::Vector2f velocity {triangleVelocity, triangleVelocity};
 };
-
-
 
 #endif //COLLISIONS_INTERNSHIP_TRIANGLE_H
