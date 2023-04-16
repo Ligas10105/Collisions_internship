@@ -67,7 +67,12 @@ SAT::triangle Triangle::getVertices() {
 
 }
 
-void Triangle::changeColor() {
+void Triangle::collissionColor(){
     shape.setFillColor(sf::Color::Yellow);
 }
+void Triangle::noCollissionColor() {
+    shape.setFillColor(sf::Color::Red);
+}
+
+
 
