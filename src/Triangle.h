@@ -21,8 +21,8 @@ public:
     float bottom();
 
     SAT::triangle getVertices();
-    void collissionColor();
-    void noCollissionColor();
+    void setCollissionColor();
+    void setNoCollissionColor();
 
 
 private:

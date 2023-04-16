@@ -24,9 +24,9 @@ int main() {
 
         t1.update();
         if (SAT::isColliding(t1.getVertices(), t2.getVertices())) {
-            t1.collissionColor();
+            t1.setCollissionColor();
         } else {
-            t1.noCollissionColor();
+            t1.setNoCollissionColor();
         }
         window.draw(t1);
         window.draw(t2);

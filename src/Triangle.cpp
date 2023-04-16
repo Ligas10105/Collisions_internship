@@ -56,21 +56,21 @@ void Triangle::draw(sf::RenderTarget &target, sf::RenderStates state) const {
 }
 
 SAT::triangle Triangle::getVertices() {
-    SAT::triangle t;
-    t.points.at(0) = {shape.getTransform().transformPoint(shape.getPoint(0)).x,
-                      shape.getTransform().transformPoint(shape.getPoint(0)).y};
-    t.points.at(1) = {shape.getTransform().transformPoint(shape.getPoint(1)).x,
-                      shape.getTransform().transformPoint(shape.getPoint(1)).y};
-    t.points.at(2) = {shape.getTransform().transformPoint(shape.getPoint(2)).x,
-                      shape.getTransform().transformPoint(shape.getPoint(2)).y};
-    return t;
+    return {{{{shape.getTransform().transformPoint(shape.getPoint(0)).x,
+               shape.getTransform().transformPoint(shape.getPoint(0)).y},
+              {shape.getTransform().transformPoint(shape.getPoint(1)).x,
+               shape.getTransform().transformPoint(shape.getPoint(1)).y},
+              {shape.getTransform().transformPoint(shape.getPoint(2)).x,
+               shape.getTransform().transformPoint(shape.getPoint(2)).y}}}};
 
 }
 
-void Triangle::collissionColor(){
+void Triangle::setCollissionColor() {
     shape.setFillColor(sf::Color::Yellow);
 }
-void Triangle::noCollissionColor() {
+
+
+void Triangle::setNoCollissionColor() {
     shape.setFillColor(sf::Color::Red);
 }
 
