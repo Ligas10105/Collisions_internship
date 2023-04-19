@@ -1,16 +1,13 @@
-#include <iostream>
-#include <SFML/Graphics.hpp>
-#include <SFML/Window.hpp>
 #include "Triangle.h"
 #include "SAT.h"
-
-
+#include <SFML/Graphics.hpp>
+#include <SFML/Window.hpp>
+#include <iostream>
 
 
 int main() {
     sf::RenderWindow window(sf::VideoMode(800, 600), "Triangles collisions");
     window.setFramerateLimit(60);
-    std::cout << "Start background music" << std::endl;
     Triangle t1(60, 40);
     Triangle t2(400, 300);
 

@@ -5,8 +5,8 @@
 #ifndef COLLISIONS_INTERNSHIP_TRIANGLE_H
 #define COLLISIONS_INTERNSHIP_TRIANGLE_H
 
-#include <SFML/Graphics.hpp>
 #include "SAT.h"
+#include <SFML/Graphics.hpp>
 
 class Triangle : public sf::Drawable {
 public:
