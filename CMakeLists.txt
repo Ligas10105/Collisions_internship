@@ -13,6 +13,6 @@ target_compile_features(Collisions_internship PRIVATE cxx_std_17)
 if (WIN32 AND BUILD_SHARED_LIBS)
     add_custom_command(TARGET Collisions_internship POST_BUILD
             COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_RUNTIME_DLLS:Collisions_internship> $<TARGET_FILE_DIR:Collisions_internship> COMMAND_EXPAND_LISTS)
-endif()
+endif ()
 
 install(TARGETS Collisions_internship)

@@ -22,11 +22,11 @@ void Triangle::update() {
     shape.move(velocity);
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Left) && left() > 0) {
         velocity.x = -triangleVelocity;
-    } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right) && right() < 600) {
+    } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Right) && right() < 800) {
         velocity.x = triangleVelocity;
     } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Up) && top() > 0) {
         velocity.y = -triangleVelocity;
-    } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Down) && bottom() < 800) {
+    } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Down) && bottom() < 600) {
         velocity.y = triangleVelocity;
     } else {
         velocity.x = 0;
@@ -35,11 +35,11 @@ void Triangle::update() {
 }
 
 float Triangle::left() {
-    return shape.getPosition().x + (shape.getGlobalBounds().getSize().x / 2.f);
+    return shape.getPosition().x - (shape.getGlobalBounds().getSize().x / 2.f);
 }
 
 float Triangle::right() {
-    return shape.getPosition().x - (shape.getGlobalBounds().getSize().x / 2.f);
+    return shape.getPosition().x + (shape.getGlobalBounds().getSize().x / 2.f);
 }
 
 float Triangle::top() {
@@ -47,7 +47,7 @@ float Triangle::top() {
 }
 
 float Triangle::bottom() {
-    return shape.getPosition().y - (shape.getGlobalBounds().getSize().y / 2.f);
+    return shape.getPosition().y + (shape.getGlobalBounds().getSize().y / 2.f);
 }
 
 

@@ -6,10 +6,10 @@
 
 
 int main() {
-    sf::RenderWindow window(sf::VideoMode(600, 800), "Triangles collisions");
+    sf::RenderWindow window(sf::VideoMode(800, 600), "Triangles collisions");
     window.setFramerateLimit(60);
-    Triangle t1(0, 0);
-    Triangle t2(300, 400);
+    Triangle t1(60, 40);
+    Triangle t2(400, 300);
 
     while (window.isOpen()) {
         window.clear(sf::Color::Black);
