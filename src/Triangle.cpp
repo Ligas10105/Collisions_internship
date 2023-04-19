@@ -12,13 +12,14 @@ Triangle::Triangle(float t_X, float t_Y) {
     shape.setPoint(0, sf::Vector2f(100.0f, 100.0f));
     shape.setPoint(1, sf::Vector2f(220.0f, 100.0f));
     shape.setPoint(2, sf::Vector2f(160.0f, 180.0f));
-    shape.setFillColor(sf::Color::Red);
+    shape.setFillColor(sf::Color::Green);
 
 
 }
 
 
 void Triangle::update() {
+    shape.rotate(30.f);
     shape.move(velocity);
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::Left) && left() > 0) {
         velocity.x = -triangleVelocity;
@@ -66,12 +67,12 @@ SAT::triangle Triangle::getVertices() {
 }
 
 void Triangle::setCollissionColor() {
-    shape.setFillColor(sf::Color::Yellow);
+    shape.setFillColor(sf::Color::Red);
 }
 
 
 void Triangle::setNoCollissionColor() {
-    shape.setFillColor(sf::Color::Red);
+    shape.setFillColor(sf::Color::Green);
 }
 
 

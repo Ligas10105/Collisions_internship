@@ -5,9 +5,12 @@
 #include "SAT.h"
 
 
+
+
 int main() {
     sf::RenderWindow window(sf::VideoMode(800, 600), "Triangles collisions");
     window.setFramerateLimit(60);
+    std::cout << "Start background music" << std::endl;
     Triangle t1(60, 40);
     Triangle t2(400, 300);
 
@@ -21,12 +24,13 @@ int main() {
             }
 
         }
-
         t1.update();
         if (SAT::isColliding(t1.getVertices(), t2.getVertices())) {
             t1.setCollissionColor();
+            t2.setCollissionColor();
         } else {
             t1.setNoCollissionColor();
+            t2.setNoCollissionColor();
         }
         window.draw(t1);
         window.draw(t2);
