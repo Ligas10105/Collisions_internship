@@ -9,13 +9,14 @@ Zaimplementuj funkcję `isColliding` zwracającą `true` jeśli dwa trójkąty w
 widoczne na ekranie i co najmniej jeden z nich możliwy do sterowania przez
 użytkownika. Kolizja powinna być w jakiś sposób zasygnalizowana użytkownikowi.
 
-struct vec2
-{
-float x, y;
-}
-struct triangle
-{
-std::array<vec2, 3>points;
-}
-bool isColliding(const & triangle1, const & triangle2 );
+
+#Sterowanie
+
+Strzałki Góra/Doł/Prawo/Lewo - ruch trójkąta
+
+Obrót w prawo - D
+Obrót w lewo - A
+
+
+
 
