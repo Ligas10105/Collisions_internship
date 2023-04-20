@@ -8,7 +8,7 @@ FetchContent_Declare(SFML
 FetchContent_MakeAvailable(SFML)
 
 add_executable(Collisions_internship src/main.cpp src/SAT.h src/SAT.h src/SAT.cpp src/Triangle.h src/Triangle.h src/Triangle.cpp)
-target_link_libraries(Collisions_internship PRIVATE sfml-graphics sfml-audio sfml-system)
+target_link_libraries(Collisions_internship PRIVATE sfml-graphics)
 target_compile_features(Collisions_internship PRIVATE cxx_std_17)
 if (WIN32 AND BUILD_SHARED_LIBS)
     add_custom_command(TARGET Collisions_internship POST_BUILD
