@@ -3,16 +3,16 @@
 //
 
 #include "Triangle.h"
-#include <math.h>
+#include <cmath>
 
 
 Triangle::Triangle(float t_X, float t_Y) {
     shape.setPointCount(3);
     shape.setPosition(t_X, t_Y);
-    shape.setOrigin(100 + 100 / 2.f, 100 + 100 * std::sqrt(3) / 2.f / 2.f);
-    shape.setPoint(0, sf::Vector2f(100, 100));
-    shape.setPoint(1, sf::Vector2f(200, 100));
-    shape.setPoint(2, sf::Vector2f(150, 100 + 100 * std::sqrt(3) / 2));
+    shape.setOrigin((100.f + (100.f / 2.f)), (100.f + (100.f * std::sqrt(3.f) / 2.f) / 2.f));
+    shape.setPoint(0, sf::Vector2f(100.f, 100.f));
+    shape.setPoint(1, sf::Vector2f(200.f, 100.f));
+    shape.setPoint(2, sf::Vector2f(150.f, 100.f + 100.f * std::sqrt(3.f) / 2.f));
     shape.setFillColor(sf::Color::Green);
 
 
