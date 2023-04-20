@@ -10,7 +10,7 @@ widoczne na ekranie i co najmniej jeden z nich możliwy do sterowania przez
 użytkownika. Kolizja powinna być w jakiś sposób zasygnalizowana użytkownikowi.
 
 
-#Sterowanie
+# Sterowanie
 
 Strzałki Góra/Doł/Prawo/Lewo - ruch trójkąta
 
